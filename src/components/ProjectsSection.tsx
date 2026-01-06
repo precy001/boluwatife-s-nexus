@@ -3,43 +3,46 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ecommerce from "../assets/images/image.png"
+import anns from "../assets/images/anns.jpg"
+import fml from "../assets/images/fml.jpg"
+import buraq from "../assets/images/buraq.jpg"
 
 const projects = [
   {
     title: "E-Commerce Platform",
     description:
       "A full-featured e-commerce solution with product management, cart functionality, secure checkout, and admin dashboard.",
-    tech: ["React", "PHP", "MySQL", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: ["Wordpress", "PHP", "Javascript"],
+    image: ecommerce,
+    liveUrl: "https://nitastores.com",
   },
   {
     title: "Business Management System",
     description:
       "Custom CRM and project management tool for tracking clients, invoices, and team productivity metrics.",
     tech: ["JavaScript", "PHP", "MySQL", "jQuery"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    image: anns,
+    liveUrl: "https://anns-kitchen-one.vercel.app/",
+    githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
   },
   {
     title: "Corporate Website",
     description:
       "Modern, responsive corporate website with SEO optimization, contact forms, and content management system.",
     tech: ["WordPress", "PHP", "CSS3", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    image: buraq,
+    liveUrl: "https://buraq-seven.vercel.app/",
+    githubUrl: "https://github.com/precy001/buraq-guardian",
   },
   {
     title: "Real Estate Portal",
     description:
       "Property listing platform with advanced search filters, map integration, and agent management features.",
     tech: ["React", "Node.js", "MySQL", "Google Maps API"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    image: fml,
+    liveUrl: "https://fml-connect.vercel.app/",
+    githubUrl: "https://github.com/precy001/fml-connect",
   },
 ];
 

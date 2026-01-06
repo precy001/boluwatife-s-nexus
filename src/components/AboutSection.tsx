@@ -47,7 +47,7 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With over <span className="text-foreground font-medium">8 years of experience</span> in web development,
+              With over <span className="text-foreground font-medium">3 years of experience</span> in web development,
               I specialize in building robust, scalable applications that solve real problems.
               My expertise spans the entire development lifecycle—from concept and design to
               deployment and optimization.

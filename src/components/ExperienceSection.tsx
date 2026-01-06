@@ -6,8 +6,8 @@ import { Briefcase, Calendar } from "lucide-react";
 const experiences = [
   {
     company: "Mayomos Cleaners Nig. Ltd",
-    role: "Full-Stack Developer",
-    period: "2020 - Present",
+    role: "Web Developer",
+    period: "2023 - 2024",
     description:
       "Lead developer responsible for building and maintaining the company's digital presence. Developed responsive UI components, improved overall UX, and handled both frontend and backend logic for various web applications.",
     achievements: [
@@ -18,9 +18,9 @@ const experiences = [
     ],
   },
   {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "2016 - Present",
+    company: "NitaStores",
+    role: "Full Stack Developer",
+    period: "2025 - Present",
     description:
       "Providing full-stack web development services to diverse clients ranging from startups to established businesses.",
     achievements: [
