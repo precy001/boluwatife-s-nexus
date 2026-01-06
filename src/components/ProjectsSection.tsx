@@ -18,28 +18,28 @@ const projects = [
     liveUrl: "https://nitastores.com",
   },
   {
-    title: "Business Management System",
+    title: "Food Ordering Web App",
     description:
-      "Custom CRM and project management tool for tracking clients, invoices, and team productivity metrics.",
+      "A seamless food ordering platform with menu browsing, cart management, and order tracking for a delightful dining experience.",
     tech: ["JavaScript", "PHP", "MySQL", "jQuery"],
     image: anns,
     liveUrl: "https://anns-kitchen-one.vercel.app/",
     githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
   },
   {
-    title: "Corporate Website",
+    title: "Drowning Detection IoT Dashboard",
     description:
-      "Modern, responsive corporate website with SEO optimization, contact forms, and content management system.",
-    tech: ["WordPress", "PHP", "CSS3", "JavaScript"],
+      "Smart dashboard for an IoT device that detects drowning and triggers rescue protocols. Features user authentication, device registration, and a comprehensive admin portal.",
+    tech: ["React", "Node.js", "IoT", "Admin Portal"],
     image: buraq,
     liveUrl: "https://buraq-seven.vercel.app/",
     githubUrl: "https://github.com/precy001/buraq-guardian",
   },
   {
-    title: "Real Estate Portal",
+    title: "Matchmaking Web App",
     description:
-      "Property listing platform with advanced search filters, map integration, and agent management features.",
-    tech: ["React", "Node.js", "MySQL", "Google Maps API"],
+      "A modern matchmaking platform connecting people based on compatibility, preferences, and shared interests.",
+    tech: ["React", "Node.js", "MySQL", "Matching Algorithm"],
     image: fml,
     liveUrl: "https://fml-connect.vercel.app/",
     githubUrl: "https://github.com/precy001/fml-connect",
