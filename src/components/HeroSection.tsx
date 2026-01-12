@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CodeSnippet } from "./CodeSnippet";
 
 export function HeroSection() {
   const handleDownloadResume = () => {
@@ -20,52 +21,62 @@ export function HeroSection() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/3 rounded-full blur-3xl animate-pulse delay-1000" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="text-primary text-sm md:text-base font-medium tracking-wider uppercase mb-4">
-            Full-Stack Web Developer
-          </p>
-        </motion.div>
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text content */}
+          <div className="text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="text-primary text-sm md:text-base font-medium tracking-wider uppercase mb-4">
+                Full-Stack Web Developer
+              </p>
+            </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
-        >
-          Hi, I'm{" "}
-          <span className="text-primary glow-text">Iyiade Boluwatife</span>
-        </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            >
+              Hi, I'm{" "}
+              <span className="text-primary glow-text">Iyiade Boluwatife</span>
+            </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
-        >
-          I build scalable, high-performance web applications with clean UI and
-          solid backend logic. 3+ years of crafting digital experiences that
-          matter.
-        </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10"
+            >
+              I build scalable, high-performance web applications with clean UI and
+              solid backend logic. 3+ years of crafting digital experiences that
+              matter.
+            </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <Button variant="hero" size="xl" onClick={handleDownloadResume}>
-            <Download className="w-5 h-5" />
-            Download Resume
-          </Button>
-          <Button variant="hero-outline" size="xl" asChild>
-            <a href="#projects">View Projects</a>
-          </Button>
-        </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+            >
+              <Button variant="hero" size="xl" onClick={handleDownloadResume}>
+                <Download className="w-5 h-5" />
+                Download Resume
+              </Button>
+              <Button variant="hero-outline" size="xl" asChild>
+                <a href="#projects">View Projects</a>
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Code snippet */}
+          <div className="hidden lg:block">
+            <CodeSnippet />
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
