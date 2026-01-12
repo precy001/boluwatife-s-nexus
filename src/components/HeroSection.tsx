@@ -7,7 +7,7 @@ export function HeroSection() {
   const handleDownloadResume = () => {
     // Create a sample resume download - in production, replace with actual resume URL
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/MyResume.pdf";
     link.download = "Iyiade_Boluwatife_Resume.pdf";
     link.click();
   };

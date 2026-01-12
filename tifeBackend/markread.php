@@ -29,7 +29,7 @@ $id = (int) $data['id'];
 try {
     $pdo = getDBConnection();
     
-    $stmt = $pdo->prepare("UPDATE messages SET is_read = 1 WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE contact_messages SET is_read = 1 WHERE id = :id");
     $stmt->execute([':id' => $id]);
     
     echo json_encode(['success' => true, 'message' => 'Message marked as read']);

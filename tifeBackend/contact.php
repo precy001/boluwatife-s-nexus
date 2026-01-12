@@ -57,7 +57,7 @@ try {
     
     // Insert message into database
     $stmt = $pdo->prepare("
-        INSERT INTO messages (name, email, message, created_at, is_read)
+        INSERT INTO contact_messages (name, email, message, created_at, is_read)
         VALUES (:name, :email, :message, NOW(), 0)
     ");
     

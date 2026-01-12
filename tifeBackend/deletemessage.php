@@ -29,7 +29,7 @@ $id = (int) $data['id'];
 try {
     $pdo = getDBConnection();
     
-    $stmt = $pdo->prepare("DELETE FROM messages WHERE id = :id");
+    $stmt = $pdo->prepare("DELETE FROM contact_messages WHERE id = :id");
     $stmt->execute([':id' => $id]);
     
     echo json_encode(['success' => true, 'message' => 'Message deleted successfully']);

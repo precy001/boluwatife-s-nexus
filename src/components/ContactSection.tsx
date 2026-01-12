@@ -15,12 +15,12 @@ const contactSchema = z.object({
 });
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
+  { icon: Github, href: "https://github.com/precy001", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Mail, href: "mailto:hello@iyiade.dev", label: "Email" },
 ];
 
-const API_URL = "http://localhost/boluwatife-s-nexus/backend/contact.php";
+const API_URL = "https://schiipha-buraq.com.ng/tifeBackend/contact.php";
 
 export function ContactSection() {
   const ref = useRef(null);

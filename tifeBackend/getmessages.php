@@ -21,7 +21,7 @@ try {
     // Get all messages, newest first
     $stmt = $pdo->query("
         SELECT id, name, email, message, created_at, is_read
-        FROM messages
+        FROM contact_messages
         ORDER BY created_at DESC
     ");
     

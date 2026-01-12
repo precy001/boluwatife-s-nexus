@@ -5,9 +5,9 @@
  */
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'portfolio_db');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'schiipha_tife');
+define('DB_USER', 'schiipha_tife');
+define('DB_PASS', 'UltimateDev))@@#');
 
 // Create database connection
 function getDBConnection() {
