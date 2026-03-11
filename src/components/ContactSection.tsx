@@ -20,7 +20,7 @@ const socialLinks = [
   { icon: Mail, href: "mailto:hello@iyiade.dev", label: "Email" },
 ];
 
-const API_URL = "https://schiipha-buraq.com.ng/tifeBackend/contact.php";
+const API_URL = "https://dabyles.com.ng/tifeBackend/contact.php";
 
 export function ContactSection() {
   const ref = useRef(null);

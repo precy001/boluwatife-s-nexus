@@ -7,6 +7,7 @@ import ecommerce from "../assets/images/image.png"
 import anns from "../assets/images/anns.jpg"
 import fml from "../assets/images/fml.jpg"
 import buraq from "../assets/images/buraq.jpg"
+import dabyles from "../assets/images/dabyles.jpg"
 
 const projects = [
   {
@@ -34,6 +35,15 @@ const projects = [
     image: buraq,
     liveUrl: "https://buraq-seven.vercel.app/",
     githubUrl: "https://github.com/precy001/buraq-guardian",
+  },
+ {
+    title: "Engineering Company Website",
+    description:
+      "Professional website for Dabyles International Limited, an engineering firm. Features a modern dark-themed UI showcasing services across Oil & Gas, Manufacturing, and Construction, with sections for projects, team, and contact.",
+    tech: ["React", "Tailwind CSS", "Responsive Design", "SEO", "PHP", "MySQL"],
+    image: dabyles,
+    liveUrl: "https://dabyles.com.ng/",
+    githubUrl: "https://github.com/precy001/precision-portfolio",
   },
   {
     title: "Matchmaking Web App",

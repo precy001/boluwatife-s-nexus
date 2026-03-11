@@ -14,7 +14,7 @@ interface Message {
   is_read: number;
 }
 
-const API_BASE = "https://schiipha-buraq.com.ng/tifeBackend";
+const API_BASE = "https://dabyles.com.ng/tifeBackend";
 
 export default function Admin() {
   const [messages, setMessages] = useState<Message[]>([]);

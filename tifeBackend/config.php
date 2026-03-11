@@ -5,8 +5,8 @@
  */
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'schiipha_tife');
-define('DB_USER', 'schiipha_tife');
+define('DB_NAME', 'dabylesc_tife');
+define('DB_USER', 'dabylesc_tife');
 define('DB_PASS', 'UltimateDev))@@#');
 
 // Create database connection
