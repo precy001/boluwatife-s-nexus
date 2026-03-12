@@ -19,22 +19,22 @@ const projects = [
     liveUrl: "https://nitastores.com",
   },
   {
-    title: "Food Ordering Web App",
-    description:
-      "A seamless food ordering platform with menu browsing, cart management, and order tracking for a delightful dining experience.",
-    tech: ["JavaScript", "PHP", "MySQL", "jQuery"],
-    image: anns,
-    liveUrl: "https://anns-kitchen-one.vercel.app/",
-    githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
-  },
-  {
     title: "Drowning Detection IoT Dashboard",
     description:
       "Smart dashboard for an IoT device that detects drowning and triggers rescue protocols. Features user authentication, device registration, and a comprehensive admin portal.",
     tech: ["React", "Node.js", "IoT", "Admin Portal"],
     image: buraq,
-    liveUrl: "https://buraq-seven.vercel.app/",
+    liveUrl: "https://schiiphaalayn.com.ng/",
     githubUrl: "https://github.com/precy001/buraq-guardian",
+  },
+  {
+    title: "Food Ordering Web App",
+    description:
+      "A seamless food ordering platform with menu browsing, cart management, and order tracking for a delightful dining experience.",
+    tech: ["JavaScript", "PHP", "MySQL", "jQuery"],
+    image: anns,
+    liveUrl: "https://anns-kitchen-one.vercel.app/menu",
+    githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
   },
  {
     title: "Engineering Company Website",
