@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import ecommerce from "../assets/images/image.png"
 import anns from "../assets/images/anns.jpg"
 import fml from "../assets/images/fml.jpg"
-import buraq from "../assets/images/buraq.jpg"
+import buraq from "../assets/images/buraq.png"
 import dabyles from "../assets/images/dabyles.jpg"
 
 const projects = [
