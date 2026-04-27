@@ -24,7 +24,7 @@ const projects = [
       "Smart dashboard for an IoT device that detects drowning and triggers rescue protocols. Features user authentication, device registration, and a comprehensive admin portal.",
     tech: ["React", "Node.js", "IoT", "Admin Portal"],
     image: buraq,
-    liveUrl: "https://schiiphaalayn.com.ng/",
+    liveUrl: "https://shifaalayn.com.ng/",
     githubUrl: "https://github.com/precy001/buraq-guardian",
   },
   {
