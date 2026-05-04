@@ -20,7 +20,7 @@ const skillCategories = [
       { name: "MySQL", level: 85 },
       { name: "Node.js", level: 75 },
       { name: "REST APIs", level: 90 },
-      { name: "WordPress", level: 85 },
+      { name: "Performance", level: 85 },
     ],
   },
   {
@@ -30,7 +30,7 @@ const skillCategories = [
       { name: "Figma", level: 80 },
       { name: "SEO", level: 85 },
       { name: "UI/UX Design", level: 80 },
-      { name: "Performance", level: 85 },
+      { name: "Wordpress", level: 85 },
     ],
   },
 ];
