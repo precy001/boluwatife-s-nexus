@@ -5,29 +5,51 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "Mayomos Cleaners Nig. Ltd",
-    role: "Web Developer",
-    period: "2023 - 2024",
+    company: "GroowFuse Consult",
+    role: "Full-Stack Developer",
+    period: "Jan 2026 — Present",
     description:
-      "Lead developer responsible for building and maintaining the company's digital presence. Developed responsive UI components, improved overall UX, and handled both frontend and backend logic for various web applications.",
+      "Designed and shipped a complete custom platform replacing the previous WordPress install — public site, blog, contact, newsletter, and a full admin panel with role-based access, rich-text editor, message inbox, audit log, and analytics.",
     achievements: [
-      "Built a responsive, mobile-first company website increasing customer engagement by 40%",
-      "Developed custom booking and scheduling system reducing manual work by 60%",
-      "Implemented SEO best practices resulting in 3x organic traffic growth",
-      "Created admin dashboard for real-time business analytics and reporting",
+      "Built a self-hosted analytics page with seven Recharts visualizations and a privacy-first page-view tracker (HMAC-hashed visitor IDs, no cookies, no PII)",
+      "Implemented production-grade backend: session auth with HttpOnly cookies, per-IP rate limiting, CORS allow-listing, file-backed audit log, IP hashing",
+      "Integrated real SMTP via PHPMailer with branded HTML email templates for contact replies and newsletter delivery",
+      "Configured SPF, DKIM, and DMARC for split-domain email delivery between Microsoft 365 and HostArmada SMTP",
     ],
   },
   {
-    company: "NitaStores",
-    role: "Full Stack Developer",
-    period: "2025 - Present",
+    company: "The Buraq",
+    role: "Software Engineer",
+    period: "1 year",
     description:
-      "Providing full-stack web development services to diverse clients ranging from startups to established businesses.",
+      "Built the front-line software for a real-time drowning-detection system — a Progressive Web App connected to an AI-powered IoT sensor array.",
     achievements: [
-      "Delivered 50+ successful projects across various industries",
-      "Maintained 100% client satisfaction rate with repeat business",
-      "Specialized in e-commerce, corporate websites, and custom web applications",
-      "Consulted on technical architecture and performance optimization",
+      "Designed and implemented the API layer brokering communication between the PWA and the IoT hardware, handling sensor events and connection recovery",
+      "Engineered the alarm pipeline: AI detection → push notification → on-device audio alarm, turning any phone or tablet into a lifeguard alert",
+      "Tuned event-to-alarm latency to sub-second on healthy connections — in drowning incidents, seconds matter",
+    ],
+  },
+  {
+    company: "Nitastores",
+    role: "Full-Stack Developer",
+    period: "3 years",
+    description:
+      "Joined as a feature developer on a live e-commerce platform serving 300,000+ users across 17,000+ products. Worked across the React frontend and PHP backend.",
+    achievements: [
+      "Implemented a smart product-suggestion engine surfacing relevant items based on browsing behavior and cart context",
+      "Shipped most of the modern e-commerce features customers expect: faceted search, wishlists, related-products carousels, cart persistence, checkout improvements",
+      "One contributor among several to a 60%+ sales lift over my tenure",
+    ],
+  },
+  {
+    company: "Dabyles Engineering",
+    role: "Web Developer",
+    period: "1 year",
+    description:
+      "Built dabyles.com.ng end-to-end — from initial design through deployment to ongoing maintenance — for an engineering services firm. Currently maintain the live site.",
+    achievements: [
+      "Single point of ownership for the company's entire web presence",
+      "Handle content updates, performance work, and feature additions as needed",
     ],
   },
 ];

@@ -51,9 +51,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10"
             >
-              I build scalable, high-performance web applications with clean UI and
-              solid backend logic. 3+ years of crafting digital experiences that
-              matter.
+              I build production-grade web applications across React and PHP —
+              custom CMS, admin panels, analytics, e-commerce. Currently shipping
+              a full custom platform for a Dublin-based consultancy.
             </motion.p>
 
             <motion.div

@@ -8,51 +8,51 @@ import anns from "../assets/images/anns.jpg"
 import fml from "../assets/images/fml.jpg"
 import buraq from "../assets/images/buraq.png"
 import dabyles from "../assets/images/dabyles.jpg"
+import groowfuse from "../assets/images/groowfuse.png"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "GroowFuse Consult — Custom CMS & Admin Platform",
     description:
-      "A full-featured e-commerce solution with product management, cart functionality, secure checkout, and admin dashboard.",
-    tech: ["Wordpress", "PHP", "Javascript"],
-    image: ecommerce,
-    liveUrl: "https://nitastores.com",
+      "Complete custom platform for a Dublin-based IT consultancy. Public site (React 19 + Vite), full PHP/MySQL backend with role-based admin panel, rich-text post editor, message inbox, newsletter, audit log, branded SMTP email, and a self-hosted analytics page with seven Recharts visualizations and privacy-first page-view tracking.",
+    tech: ["React 19", "TypeScript", "PHP 8", "MySQL", "Tailwind CSS", "TipTap", "Recharts", "PHPMailer"],
+    image: groowfuse,
+    liveUrl: "https://groowfuse.vercel.app",
   },
   {
-    title: "Drowning Detection IoT Dashboard",
+    title: "Drowning Detection IoT System",
     description:
-      "Smart dashboard for an IoT device that detects drowning and triggers rescue protocols. Features user authentication, device registration, and a comprehensive admin portal.",
-    tech: ["React", "Node.js", "IoT", "Admin Portal"],
+      "Front-line software for a real-time drowning-detection PWA connected to AI-powered IoT sensors. Built the API layer brokering communication between the PWA and the hardware, plus the alarm pipeline that fires push notifications and triggers an on-device audio alarm when the AI detects a drowning event.",
+    tech: ["React", "PWA", "Node.js", "IoT", "Push Notifications"],
     image: buraq,
     liveUrl: "https://shifaalayn.com.ng/",
     githubUrl: "https://github.com/precy001/buraq-guardian",
   },
   {
-    title: "Food Ordering Web App",
+    title: "Nitastores E-Commerce Platform",
     description:
-      "A seamless food ordering platform with menu browsing, cart management, and order tracking for a delightful dining experience.",
-    tech: ["JavaScript", "PHP", "MySQL", "jQuery"],
-    image: anns,
-    liveUrl: "https://anns-kitchen-one.vercel.app/menu",
-    githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
+      "Three years of feature work on a live e-commerce platform serving 300,000+ users across 17,000+ products. Implemented a smart product-suggestion engine and shipped most modern e-commerce features customers expect: faceted search, wishlists, related-products carousels, cart persistence, and checkout improvements. One contributor among several to a 60%+ sales lift over my tenure.",
+    tech: ["React", "PHP", "MySQL", "JavaScript"],
+    image: ecommerce,
+    liveUrl: "https://nitastores.com",
   },
  {
-    title: "Engineering Company Website",
+    title: "Dabyles Engineering Website",
     description:
-      "Professional website for Dabyles International Limited, an engineering firm. Features a modern dark-themed UI showcasing services across Oil & Gas, Manufacturing, and Construction, with sections for projects, team, and contact.",
-    tech: ["React", "Tailwind CSS", "Responsive Design", "SEO", "PHP", "MySQL"],
+      "Built end-to-end and currently maintain. Modern dark-themed marketing site for an engineering services firm covering Oil & Gas, Manufacturing, and Construction. Single point of ownership for the company's entire web presence.",
+    tech: ["React", "Tailwind CSS", "PHP", "MySQL", "SEO"],
     image: dabyles,
     liveUrl: "https://dabyles.com.ng/",
     githubUrl: "https://github.com/precy001/precision-portfolio",
   },
   {
-    title: "Matchmaking Web App",
+    title: "Ann's Kitchen — Food Ordering App",
     description:
-      "A modern matchmaking platform connecting people based on compatibility, preferences, and shared interests.",
-    tech: ["React", "Node.js", "MySQL", "Matching Algorithm"],
-    image: fml,
-    liveUrl: "https://fml-connect.vercel.app/",
-    githubUrl: "https://github.com/precy001/fml-connect",
+      "Food ordering platform with menu browsing, cart management, and order tracking. Side project — practiced building a complete cart-to-checkout flow with persistent state.",
+    tech: ["JavaScript", "PHP", "MySQL"],
+    image: anns,
+    liveUrl: "https://anns-kitchen-one.vercel.app/menu",
+    githubUrl: "https://github.com/precy001/ann-s-kitchen-comfort-hub",
   },
 ];
 
@@ -122,12 +122,14 @@ export function ProjectsSection() {
                       Live Demo
                     </a>
                   </Button>
-                  <Button variant="ghost" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} />
-                      Code
-                    </a>
-                  </Button>
+                  {project.githubUrl && (
+                    <Button variant="ghost" size="sm" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github size={16} />
+                        Code
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.article>

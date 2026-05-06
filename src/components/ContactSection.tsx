@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Send, Github, Linkedin, Mail } from "lucide-react";
+import { Send, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,8 +16,7 @@ const contactSchema = z.object({
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/precy001", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@iyiade.dev", label: "Email" },
+  { icon: Mail, href: "mailto:iyiadeboluwatife8@gmail.com", label: "Email" },
 ];
 
 const API_URL = "https://dabyles.com.ng/tifeBackend/contact.php";
@@ -112,7 +111,9 @@ export function ContactSection() {
                 Get in Touch
               </h3>
               <p className="text-muted-foreground">
-                I'm currently available for freelance projects and full-time opportunities. Let's build something great together.
+                Open to remote full-time roles and substantial freelance projects.
+                If you're building something meaningful and want a developer who
+                ships, I'd like to hear about it.
               </p>
             </div>
 

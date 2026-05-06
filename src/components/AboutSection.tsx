@@ -47,20 +47,24 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With over <span className="text-foreground font-medium">3 years of experience</span> in web development,
-              I specialize in building robust, scalable applications that solve real problems.
-              My expertise spans the entire development lifecycle—from concept and design to
-              deployment and optimization.
+              I'm a full-stack developer working across <span className="text-foreground font-medium">React, PHP, and modern JavaScript</span>.
+              Comfortable owning a project from a blank editor to a deployed system —
+              I recently shipped a complete custom CMS, admin panel, and analytics
+              platform for a Dublin-based consultancy.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I thrive on transforming complex requirements into elegant, user-friendly
-              solutions. Whether it's crafting responsive frontends with React or architecting
-              efficient backend systems with PHP and MySQL, I bring a meticulous attention
-              to detail and a passion for clean architecture.
+              Before that, I spent three years at a 300,000-user e-commerce platform
+              shipping the kind of features that move the needle: smart product
+              suggestions, faceted search, cart persistence, checkout improvements.
+              In parallel, I built the front-line software for a real-time
+              drowning-detection IoT system — the kind of work where seconds
+              actually matter.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach combines technical excellence with a deep understanding of
-              business goals, ensuring every project delivers measurable value.
+              I lean toward practical engineering: clean architecture, sensible
+              trade-offs, and software that solves the problem in front of it.
+              Currently studying Electrical Engineering at the University of Lagos
+              while shipping production code.
             </p>
           </motion.div>
 

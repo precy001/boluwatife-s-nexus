@@ -2,60 +2,71 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+/*
+ * Skills are grouped semantically and presented as chips, not percentage bars.
+ * Self-rated proficiency numbers ("React 95%") are noise to anyone hiring —
+ * they signal newness more than skill. Chips read as a credible inventory.
+ */
 const skillCategories = [
+  {
+    title: "Languages",
+    skills: ["JavaScript", "TypeScript", "PHP", "HTML5", "CSS3", "SQL"],
+  },
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "jQuery", level: 85 },
+      "React",
+      "Next.js",
+      "Vite",
+      "Tailwind CSS",
+      "Redux",
+      "React Router",
+      "TipTap",
+      "Recharts",
+      "Framer Motion",
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "PHP", level: 90 },
-      { name: "MySQL", level: 85 },
-      { name: "Node.js", level: 75 },
-      { name: "REST APIs", level: 90 },
-      { name: "Performance", level: 85 },
+      "PHP 8",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "REST APIs",
+      "PHPMailer",
+      "Session auth",
+      "Rate limiting",
     ],
   },
   {
-    title: "Tools & Others",
+    title: "Tools & DevOps",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Figma", level: 80 },
-      { name: "SEO", level: 85 },
-      { name: "UI/UX Design", level: 80 },
-      { name: "Wordpress", level: 85 },
+      "Git",
+      "GitHub Actions",
+      "cPanel",
+      "Vercel",
+      "XAMPP",
+      "npm",
+      "Composer",
+      "Apache",
+      "Figma",
+    ],
+  },
+  {
+    title: "Practices",
+    skills: [
+      "Responsive design",
+      "Accessibility",
+      "SEO",
+      "Performance",
+      "Security hardening",
+      "SPF / DKIM / DMARC",
+      "Progressive Web Apps",
+      "IoT integration",
     ],
   },
 ];
-
-function SkillBar({ name, level, delay }: { name: string; level: number; delay: number }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  return (
-    <div ref={ref} className="mb-4">
-      <div className="flex justify-between items-center mb-2">
-        <span className="text-sm text-foreground">{name}</span>
-        <span className="text-sm text-muted-foreground">{level}%</span>
-      </div>
-      <div className="h-2 bg-surface rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={isInView ? { width: `${level}%` } : { width: 0 }}
-          transition={{ duration: 1, delay, ease: "easeOut" }}
-          className="h-full bg-gradient-to-r from-primary to-primary/70 rounded-full"
-        />
-      </div>
-    </div>
-  );
-}
 
 export function SkillsSection() {
   const ref = useRef(null);
@@ -74,32 +85,34 @@ export function SkillsSection() {
             My <span className="text-primary">Tech Stack</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies I work with daily to build modern, scalable applications
+            Tools and technologies I reach for when shipping production work.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+              transition={{ duration: 0.5, delay: categoryIndex * 0.08 }}
               className="p-6 rounded-xl bg-card border border-border"
             >
-              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary" />
-                {category.title}
-              </h3>
-              <div>
-                {category.skills.map((skill, skillIndex) => (
-                  <SkillBar
-                    key={skill.name}
-                    name={skill.name}
-                    level={skill.level}
-                    delay={categoryIndex * 0.1 + skillIndex * 0.1}
-                  />
-                ))}
+              <div className="flex flex-col md:flex-row md:items-start gap-4">
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider md:w-40 md:flex-shrink-0 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary" />
+                  {category.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1.5 text-sm rounded-md bg-surface border border-border text-foreground hover:border-primary/40 hover:text-primary transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}
